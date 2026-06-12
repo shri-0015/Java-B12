@@ -8,47 +8,25 @@ public class Main {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
 
-      relational r = new relational();
-      r.grade();
+      int[] arr = new int[5];
+      arr[0] = 2;
+      arr[1] = 6;
+      arr [2]= 5;
+      arr[3]=9;
+      arr[4] = 12;
+      for (int i=0;i< arr.length;i++){
+          System.out.print(arr[i] +" ");
 
-        System.out.println("Enter apple:");
-      int mango = sc.nextInt();
-        System.out.println("Enter banana:");
-        int banana = sc.nextInt();
-        System.out.println("Suger:");
-        int suger = sc.nextInt();
+      }
+      System.out.println("sum of all array elements:");
+        int sum =0;
+        for(int j =0;j< arr.length;j++){
 
-      System.out.println("Enter salary:");
-      int salary = sc.nextInt();
-      System.out.println("Expence:");
-      int expence = sc.nextInt();
-
-      System.out.println("Enter no.  you want to know the square: ");
-      int no = sc.nextInt();
-      sc.nextLine();
-
-
-      System.out.println("enter name: ");
-      String name = sc.nextLine();
-      System.out.println("enter hobby:");
-      String hobby = sc.nextLine();
-
-        arithmatic ar = new arithmatic();
-        ar.add(mango, banana, suger);
-
-        logicalExpressions le = new logicalExpressions();
-        le.picnic();
-
-        totalSavedAmt save = new totalSavedAmt();
-        save.totalsaving(salary, expence);
-
-        square sr = new square();
-        sr.squarenum(no);
-        personalisedMsg msg = new personalisedMsg();
-        msg.msg2(name,hobby);
-        swap swap2= new swap();
-        swap2.swapval();
-        swap2.swapval2();
-        sc.close();
+        sum += arr[j];
     }
-}
+        System.out.println("Sum of array element is:"+sum);
+        double avg;
+        avg = sum/ arr.length;
+        System.out.println("Average is: " +avg);
+
+    }}
