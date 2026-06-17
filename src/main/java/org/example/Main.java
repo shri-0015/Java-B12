@@ -34,6 +34,7 @@ public class Main {
         System.out.println("Addition of 3 nos:"+c.add(1,2,3));
         System.out.println("Multiplication of 2 nos:"+c.multiply(2,4));
         System.out.println("Multiplication of 3 nos:"+c.multiply(3,4,5));
+
         sc.close();
     }
 }
